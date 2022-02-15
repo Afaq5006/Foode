@@ -5,33 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/Yellow"
+    android:background="#EAE6C3"
     tools:context=".Sign_in">
 
     <LinearLayout
         android:id="@+id/LL_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical"
         android:layout_marginTop="10dp"
-        >
+        android:gravity="center"
+        android:orientation="vertical">
+
         <ImageView
             android:layout_width="180dp"
             android:layout_height="180dp"
             android:src="@drawable/foode"
 
             />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="Sin In"
             android:textColor="@color/black"
-            android:textStyle="bold"
             android:textSize="30sp"
-            android:gravity="center"
-            />
+            android:textStyle="bold" />
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/LL_2"
         android:layout_width="match_parent"
@@ -45,6 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Username"
+            android:textColor="@color/black"
             android:textSize="25dp"
             android:drawableLeft="@drawable/username"
 
@@ -53,18 +55,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="password"
+            android:textColor="@color/black"
             android:textSize="25dp"
             android:drawableLeft="@drawable/password"
-            />
-        <TextView
-            android:layout_marginTop="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="forget password"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:layout_marginLeft="250dp"
-
             />
     </LinearLayout>
 
@@ -79,7 +72,7 @@
 
         <Button
             android:layout_width="250dp"
-            android:layout_height="80dp"
+            android:layout_height="50dp"
             android:backgroundTint="@color/black"
             android:text="Sign In"
             android:textColor="@color/white"
@@ -96,20 +89,92 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Not Using Foode?"
+            android:text="Forget Your Password?"
             android:textSize="20dp"
-            android:textColor="@color/black"
+            android:textColor="#FD0808"
+            android:textStyle="bold"
             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LL_3"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal">
+
         <TextView
+            android:id="@+id/TV_aa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Register Now!"
-            android:textSize="50dp"
+            android:text="Don,t Have an Account?"
             android:textColor="@color/black"
+            android:layout_marginLeft="60dp"
+            android:textSize="17dp"
             android:textStyle="bold"
 
             />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register Now"
+            android:textColor="#FA0435"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+
+
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/LL_4">
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+
+            />
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F8F8F8"
+            android:drawableLeft="@drawable/google"
+            android:gravity="center"
+            android:text="Login With GoogleAccount"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Continue As Guest"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            />
+
+
+
+    </LinearLayout>
+
+
+
 
 
 
