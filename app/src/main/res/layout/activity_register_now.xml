@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register_now">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="USER ACCOUNT"
+        android:textColor="#FA0429"
+        android:textSize="30dp"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/ET_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Email Address"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="70dp"
+
+        />
+
+    <EditText
+        android:id="@+id/ET_pass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="117dp"
+        android:hint="Password"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/ET_conf"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="165dp"
+        android:hint="Confirm Password"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="CONTACT INFORMATION"
+        android:textColor="#FA0429"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="215dp"
+        />
+    <EditText
+        android:id="@+id/ET_firstN"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="260dp"
+        android:hint="First Name "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        />
+    <EditText
+        android:id="@+id/ET_lastN"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="300dp"
+        android:hint="Last Name "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        />
+    <EditText
+        android:id="@+id/ET_Add"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="340dp"
+        android:hint="Address "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        />
+    <EditText
+        android:id="@+id/ET_pho"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="420dp"
+        android:hint="Phone Number"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        />
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="460dp"
+        />
+
+
+
+
+
+</RelativeLayout>

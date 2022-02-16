@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Foode</string>
+    <string-array name="numbers">
+        <item>Pakistan</item>
+        <item>China</item>
+        <item>India</item>
+        <item>Australia</item>
+        <item>Srilanka</item>
+        <item>UAE</item>
+        <item>Turkey</item>
+        <item>Egypt</item>
+        <item>Hong Kong</item>
+        <item>Indonesia</item>
+        <item>Malaysia</item>
+
+
+
+    </string-array>
+
+
 </resources>
