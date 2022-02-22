@@ -32,16 +32,15 @@
             android:textColor="@color/black"
             android:textSize="30sp"
             android:textStyle="bold" />
+
         <EditText
             android:layout_marginTop="40dp"
-            android:id="@+id/ET_userIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"
+            android:hint="Email"
             android:textColor="@color/black"
             android:textSize="25dp"
-            android:drawableLeft="@drawable/username"
-
+            android:drawableLeft="@drawable/email"
             />
         <EditText
             android:layout_width="match_parent"
@@ -60,6 +59,7 @@
             android:textColor="@color/white"
             android:textStyle="bold" />
         <TextView
+            android:id="@+id/TV_forget"
             android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -99,16 +99,6 @@
 
             />
 
-        <Button
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/white"
-            android:drawableLeft="@drawable/google"
-            android:gravity="center"
-            android:text="Login With GoogleAccount"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
 
         <Button
             android:layout_width="match_parent"

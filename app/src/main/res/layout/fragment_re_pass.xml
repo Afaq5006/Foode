@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RePassFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_marginTop="35dp"
+            android:id="@+id/TV_Regi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter New Password"
+            android:textSize="30dp"
+            android:textColor="#FA0429"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:layout_marginTop="60dp"
+            android:id="@+id/ET_newPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New Password"
+            android:textSize="25dp"
+            android:textColorHint="@color/DarkGray"
+            />
+        <EditText
+            android:id="@+id/ET_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Re-password"
+            android:textSize="25dp"
+            android:textColorHint="@color/DarkGray"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

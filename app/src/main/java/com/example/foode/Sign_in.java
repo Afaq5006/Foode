@@ -9,17 +9,25 @@ import android.widget.TextView;
 
 public class Sign_in extends AppCompatActivity {
      TextView textView;
+     TextView forget;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
-
         textView = (TextView) findViewById(R.id.Reg_1);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(Sign_in.this,register_now.class);
+                startActivity(intent);
+            }
+        });
+        forget = (TextView) findViewById(R.id.TV_forget);
+        forget.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Sign_in.this, RePassword.class);
                 startActivity(intent);
             }
         });

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Foode">
         <activity
+            android:name=".RePassword"
+            android:exported="false" />
+        <activity
             android:name=".register_now"
             android:exported="false" />
         <activity
