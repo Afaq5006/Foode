@@ -1,17 +1,23 @@
 <resources>
     <string name="app_name">Foode</string>
     <string-array name="numbers">
-        <item>Pakistan</item>
-        <item>China</item>
-        <item>India</item>
-        <item>Australia</item>
-        <item>Srilanka</item>
-        <item>UAE</item>
-        <item>Turkey</item>
-        <item>Egypt</item>
-        <item>Hong Kong</item>
-        <item>Indonesia</item>
-        <item>Malaysia</item>
+        <item>Lahore</item>
+        <item>Sailkot</item>
+        <item>Karachi</item>
+        <item>Islambad</item>
+        <item>Quetta</item>
+        <item>Peshawar</item>
+        <item>Rawalpindi</item>
+        <item>Gujranwala</item>
+        <item>Multan</item>
+        <item>Hyderabad</item>
+        <item>Sargodha</item>
+        <item>Bahawalpur</item>
+        <item>Sahiwal</item>
+        <item>Kasur</item>
+        <item>Okara</item>
+        <item>Pattoki</item>
+
 
 
     </string-array>
