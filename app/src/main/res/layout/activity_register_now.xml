@@ -24,11 +24,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Sin In"
+        android:text="Welcome to foode"
         android:textColor="@color/black"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:textStyle="bold" />
     <LinearLayout
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -56,7 +57,7 @@
             android:drawableLeft="@drawable/username"
             />
         <EditText
-            android:id="@+id/ET_password"
+            android:id="@+id/ET_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
@@ -65,7 +66,7 @@
             android:drawableLeft="@drawable/email"
             />
         <EditText
-            android:id="@+id/ET_Repassword"
+            android:id="@+id/ET_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
@@ -78,6 +79,15 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:textColorHint="@color/DarkGray"
+            />
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="30dp"
+            android:backgroundTint="@color/black"
+            android:layout_gravity="center"
             />
     </LinearLayout>
 
