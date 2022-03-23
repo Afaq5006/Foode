@@ -34,7 +34,7 @@ public class register_now extends AppCompatActivity implements AdapterView.OnIte
                 if (checkData == true)
                     Toast.makeText(register_now.this, "User Added", Toast.LENGTH_SHORT).show();
                 else
-                    Toast.makeText(register_now.this, "Error this inserted", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(register_now.this, "Error this insert", Toast.LENGTH_SHORT).show();
             }
         });
     }
