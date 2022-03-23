@@ -74,12 +74,6 @@
             android:textColorHint="@color/DarkGray"
             android:drawableLeft="@drawable/password"
             />
-        <Spinner
-            android:id="@+id/spinner1"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:textColorHint="@color/DarkGray"
-            />
         <Button
             android:id="@+id/btn_register"
             android:layout_width="250dp"

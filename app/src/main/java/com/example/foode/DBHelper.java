@@ -8,29 +8,29 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 public class DBHelper extends SQLiteOpenHelper {
+
     public DBHelper(@Nullable Context context) {
         super(context, "Foode.db", null, 1);
     }
 
     @Override
     public void onCreate(SQLiteDatabase DB) {
-        DB.execSQL("Create Table UserDetails(username TEXT, email TEXT primary key, password TEXT, city TEXT)");
+        DB.execSQL("Create Table Userdata (username TEXT, email TEXT primary key, password TEXT)");
 
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase DB, int i, int i1) {
-        DB.execSQL("Drop table if exists UserDetails");
+        DB.execSQL("Drop table if exists Userdata");
 
     }
-    public boolean insert(String name, String email, String password, String city){
+    public boolean insert(String name, String email, String password){
         SQLiteDatabase DB = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put("username", name);
         contentValues.put("email", email);
         contentValues.put("password", password);
-        contentValues.put("city", city);
-        long result = DB.insert("UserDetails", null, contentValues);
+        long result = DB.insert("Userdata", null, contentValues);
         if (result == -1){
             return false;
         }else{
