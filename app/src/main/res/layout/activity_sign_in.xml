@@ -43,6 +43,7 @@
             android:textStyle="bold" />
 
         <EditText
+            android:id="@+id/sig_email"
             android:layout_marginTop="40dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -52,14 +53,17 @@
             android:drawableLeft="@drawable/email"
             />
         <EditText
+            android:id="@+id/sin_pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="password"
             android:textColor="@color/black"
             android:textSize="25dp"
             android:drawableLeft="@drawable/password"
+            android:inputType="textPassword"
             />
         <Button
+            android:id="@+id/LogIn"
             android:layout_marginTop="20dp"
             android:layout_width="250dp"
             android:layout_height="50dp"
