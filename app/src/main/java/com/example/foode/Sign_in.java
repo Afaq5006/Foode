@@ -47,26 +47,12 @@ public class Sign_in extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                login();
+                Intent intent = new Intent(Sign_in.this, Dashboard.class);
+                startActivity(intent);
             }
         });
 
     }
 
-    private void login() {
-        String Email = email.getText().toString();
-        String Password = password.getText().toString();
-        if (Email.isEmpty())
-        {
-            email.setError("Email not Found");
-        }
-        if (Password.isEmpty())
-        {
-            password.setError("Password not Found");
-        }
-        else
-        {
-            
-        }
-    }
+
 }
