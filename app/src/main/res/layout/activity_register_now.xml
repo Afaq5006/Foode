@@ -52,28 +52,28 @@
             android:id="@+id/ET_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="UserName"
-            android:textSize="25dp"
-            android:textColorHint="@color/DarkGray"
-            android:drawableLeft="@drawable/username"
-            />
-        <EditText
-            android:id="@+id/ET_email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:hint="Email"
             android:textSize="25dp"
             android:textColorHint="@color/DarkGray"
             android:drawableLeft="@drawable/email"
             />
         <EditText
-            android:id="@+id/ET_password"
+            android:id="@+id/ET_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:hint="password"
             android:textSize="25dp"
             android:textColorHint="@color/DarkGray"
             android:drawableLeft="@drawable/password"
+            />
+        <EditText
+            android:id="@+id/ET_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="RePassword"
+            android:textSize="25dp"
+            android:textColorHint="@color/DarkGray"
+            android:drawableLeft="@drawable/repeat"
             />
         <Button
             android:id="@+id/btn_register"

@@ -15,13 +15,15 @@ import android.widget.Toast;
 
 public class Sign_in extends AppCompatActivity {
     TextView textView, repass;
-    EditText email, password;
+    EditText editText,editText2;
     Button login;
+    DBHelper DB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
+        DB = new DBHelper(this);
         textView = (TextView) findViewById(R.id.Reg_1);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,16 +42,25 @@ public class Sign_in extends AppCompatActivity {
             }
         });
 
-        email = findViewById(R.id.sig_email);
-        password = findViewById(R.id.sin_pass);
+        editText = findViewById(R.id.sig_email);
+        editText2 = findViewById(R.id.sin_pass);
         login = findViewById(R.id.LogIn);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Sign_in.this, Dashboard.class);
-                startActivity(intent);
+                String username=editText.getText().toString();
+                String password=editText2.getText().toString();
+                Boolean checklogin=DB.checklogin(username,password);
+                if (checklogin==true){
+                    Intent intent=new Intent(Sign_in.this,Dashboard.class);
+                    startActivity(intent);
+                }
+                else {
+                    Toast.makeText(Sign_in.this, "Invalid username Password", Toast.LENGTH_SHORT).show();
+                }
             }
+
         });
 
     }
