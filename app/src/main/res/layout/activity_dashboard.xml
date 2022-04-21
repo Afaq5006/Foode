@@ -226,7 +226,7 @@
             android:layout_marginTop="0dp"
             app:cardCornerRadius="50dp"
             app:cardElevation="8dp"
-            android:id="@+id/c6">
+            android:id="@+id/Card_logout">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -238,12 +238,12 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/home"></ImageView>
+                    android:src="@drawable/logout"></ImageView>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Visit Us"
+                    android:text="LogOut"
                     android:textSize="18sp"
                     android:textStyle="bold"></TextView>
 

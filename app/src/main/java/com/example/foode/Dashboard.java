@@ -9,7 +9,7 @@ import android.view.View;
 
 public class Dashboard extends AppCompatActivity {
 
-    CardView menu;
+    CardView menu, logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,15 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Dashboard.this, Menu.class);
+                startActivity(intent);
+            }
+        });
+
+        logout = findViewById(R.id.Card_logout);
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dashboard.this, Sign_in.class);
                 startActivity(intent);
             }
         });
