@@ -34,7 +34,7 @@
             android:layout_marginBottom="10dp"
             app:cardCornerRadius="50dp"
             app:cardElevation="8dp"
-            android:id="@+id/c1"
+            android:id="@+id/profile"
             >
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -150,7 +150,7 @@
             android:layout_marginTop="10dp"
             app:cardCornerRadius="50dp"
             app:cardElevation="8dp"
-            android:id="@+id/c4">
+            android:id="@+id/content_us">
 
             <LinearLayout
                 android:layout_width="wrap_content"
