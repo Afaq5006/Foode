@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Foode">
         <activity
+            android:name=".Item_design"
+            android:exported="false" />
+        <activity
             android:name=".favourites"
             android:exported="false" />
         <activity
