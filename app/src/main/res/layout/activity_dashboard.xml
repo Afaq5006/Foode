@@ -112,7 +112,7 @@
             android:layout_marginRight="10dp"
             app:cardCornerRadius="50dp"
             app:cardElevation="8dp"
-            android:id="@+id/c3">
+            android:id="@+id/favourite">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -188,7 +188,7 @@
             android:layout_marginRight="10dp"
             app:cardCornerRadius="50dp"
             app:cardElevation="8dp"
-            android:id="@+id/c5">
+            android:id="@+id/about_us">
 
             <LinearLayout
                 android:layout_width="wrap_content"

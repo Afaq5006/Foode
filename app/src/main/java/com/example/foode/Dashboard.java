@@ -9,7 +9,7 @@ import android.view.View;
 
 public class Dashboard extends AppCompatActivity {
 
-    CardView menu, logout, profile, contactUs;
+    CardView menu, logout, profile, contactUs, aboutUs, Favourite;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +47,24 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Dashboard.this, contact_us.class);
+                startActivity(intent);
+            }
+        });
+
+        aboutUs = findViewById(R.id.about_us);
+        aboutUs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dashboard.this, AboutUs.class);
+                startActivity(intent);
+            }
+        });
+
+        Favourite = findViewById(R.id.favourite);
+        Favourite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dashboard.this, favourites.class);
                 startActivity(intent);
             }
         });
