@@ -4,6 +4,117 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".contact_us">
+    android:orientation="vertical"
+    tools:context=".contact_us"
+    android:background="#EAE6C3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/foode"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Foode"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginLeft="170dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Contect Us"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_design">
+        <TextView
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact us for a quote, help of to join the team."
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:id="@+id/fb"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="115dp"
+            android:src="@drawable/ic_baseline_alternate_email_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginTop="117dp"
+            android:layout_toRightOf="@+id/fb"
+            android:text="Email"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/txt1"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:id="@+id/wp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/ic_baseline_phone_24" />
+        <TextView
+            android:layout_marginTop="205dp"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@+id/fb"
+            android:text="+923086045982"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/txt2"
+            android:layout_marginLeft="20dp" />
+
+        <ImageView
+            android:id="@+id/insta"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="290dp"
+            android:src="@drawable/ic_baseline_location_on_24" />
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginTop="295dp"
+            android:layout_toRightOf="@+id/fb"
+            android:text="Location"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/txt3"/>
+
+
+    </RelativeLayout>
 
 </LinearLayout>
