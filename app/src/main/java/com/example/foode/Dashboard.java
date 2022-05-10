@@ -1,8 +1,10 @@
 package com.example.foode;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,10 +13,12 @@ public class Dashboard extends AppCompatActivity {
 
     CardView menu, logout, profile, contactUs, aboutUs, Favourite;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
+
 
         menu = findViewById(R.id.Card_menu);
         menu.setOnClickListener(new View.OnClickListener() {
@@ -68,5 +72,25 @@ public class Dashboard extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+    @Override
+    public void onBackPressed(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(Dashboard.this);
+        builder.setMessage("Do you really want to exit?");
+        builder.setCancelable(true);
+        builder.setNegativeButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                finishAffinity();
+            }
+        });
+        builder.setPositiveButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.cancel();
+            }
+        });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
     }
 }
