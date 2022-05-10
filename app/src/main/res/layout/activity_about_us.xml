@@ -23,11 +23,25 @@
         android:textStyle="bold"
         android:gravity="center"
         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-    <ImageView
-        android:layout_marginTop="13dp"
-        android:layout_width="169dp"
-        android:layout_height="438dp"
-        android:src="@drawable/flyfood" />
 
+        <ImageView
+            android:layout_marginTop="13dp"
+            android:layout_width="169dp"
+            android:layout_height="438dp"
+            android:src="@drawable/flyfood"
+            android:id="@+id/fly_png"/>
+        <TextView
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ever since the on-demand food delivery business model has launched, it has completely revolutionized the traditional approach. As an on-demand food delivery application allows your customers to get delivered their ordered foods in the convenience of their home, office or whereever they are."
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
 </LinearLayout>
