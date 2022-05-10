@@ -4,6 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".AboutUs">
+
+    <ImageView
+        android:layout_width="167dp"
+        android:layout_height="184dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/foode" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+    <ImageView
+        android:layout_marginTop="13dp"
+        android:layout_width="169dp"
+        android:layout_height="438dp"
+        android:src="@drawable/flyfood" />
 
 </LinearLayout>
