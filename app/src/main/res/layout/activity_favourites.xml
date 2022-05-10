@@ -4,25 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
     tools:context=".favourites">
-
-    <RatingBar
-        android:layout_width="wrap_content"
+    <ImageView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/rating_bar"
-        android:numStars="5"
-        android:stepSize="0.5"/>
-
-    <Button
-        android:layout_width="wrap_content"
+        android:src="@drawable/rating"
+        android:id="@+id/rate"
+        />
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/rate"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_submit"
-        android:text="Submit"
-        android:layout_below="@+id/rating_bar"
-        android:layout_marginLeft="78dp"
-        android:layout_marginTop="20dp"
+        android:text="The Food was fresh, properly prepared and great value for the price. We highly recommend it."
+        android:textSize="21dp"
+        android:textColor="@color/black"
+        android:id="@+id/txt"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How was delivery service"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@+id/txt"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
         />
 
+    <RelativeLayout
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/txt"
+        >
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rating_bar"
+            android:numStars="5"
+            android:stepSize="0.5"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_submit"
+            android:text="Submit"
+            android:layout_below="@+id/rating_bar"
+            android:layout_marginLeft="78dp"
+            android:layout_marginTop="20dp"
+            />
+
+    </RelativeLayout>
 </RelativeLayout>
