@@ -4,6 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".favourites">
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rating_bar"
+        android:numStars="5"
+        android:stepSize="0.5"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_submit"
+        android:text="Submit"
+        android:layout_below="@+id/rating_bar"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="20dp"
+        />
 
 </RelativeLayout>
