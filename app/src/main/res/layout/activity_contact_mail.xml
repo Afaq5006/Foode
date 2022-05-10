@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".contact_mail">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:src="@drawable/mail_pic" />
+
+    <TextView
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+    <EditText
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textSize="20dp"
+        android:layout_marginRight="5dp"/>
+
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:textSize="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="167dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:hint=""
+        android:textSize="20dp"
+        android:layout_marginRight="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/btn_mail"
+        android:layout_width="65dp"
+        android:layout_height="71dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/mail_btn" />
+
+
+</LinearLayout>
