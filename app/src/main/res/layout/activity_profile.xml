@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#EAE6C3"
     tools:context=".profile">
 
     <LinearLayout
@@ -19,6 +20,124 @@
 
             android:src="@drawable/profile" />
     </LinearLayout>
+
+    <ScrollView
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_design"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="User Name"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
+                    />
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Name"
+                    android:textSize="19dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_baseline_home_24"
+                    />
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Address"
+                    android:textSize="19dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile No."
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_baseline_mobile_friendly_24"
+                    />
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Mobile No."
+                    android:textSize="19dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Birth"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_baseline_date_range_24"
+                    />
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Date of Birth"
+                    android:textSize="19dp"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:layout_marginTop="40dp"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
 
 
 </LinearLayout>
