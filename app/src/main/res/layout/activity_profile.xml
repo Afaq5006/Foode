@@ -10,14 +10,32 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="138dp"
-        android:background="@color/Yellow">
+        android:layout_height="149dp"
+        android:background="@color/Yellow"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="Foode"
+            android:textSize="30dp"
+            android:textStyle="bold" />
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginTop="27dp"
-            android:src="@drawable/profile" />
+            android:layout_width="129dp"
+            android:layout_height="71dp"
+            android:src="@drawable/profile"
+            android:layout_marginLeft="150dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adil Tahir"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="175dp"
+            />
     </LinearLayout>
     <TextView
         android:layout_width="wrap_content"
@@ -32,6 +50,7 @@
         />
 
     <ScrollView
+        android:layout_weight="4"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="40dp"
@@ -62,7 +81,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Enter Name"
+                    android:hint="Enter Name"
                     android:textSize="19dp" />
             </LinearLayout>
 
@@ -83,7 +102,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Enter Address"
+                    android:hint="Enter Address"
                     android:textSize="19dp" />
             </LinearLayout>
 
@@ -104,7 +123,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Enter Mobile No."
+                    android:hint="Enter Mobile No."
                     android:textSize="19dp" />
             </LinearLayout>
 
@@ -127,7 +146,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Enter Date of Birth"
+                    android:hint="Enter Date of Birth"
                     android:textSize="19dp"
                     />
             </LinearLayout>
@@ -139,7 +158,9 @@
                 android:layout_marginTop="40dp"
                 android:gravity="center"
                 android:text="Submit"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:backgroundTint="@color/Yellow"
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 

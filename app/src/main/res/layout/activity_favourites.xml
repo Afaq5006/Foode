@@ -54,6 +54,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/btn_submit"
             android:text="Submit"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/Yellow"
             android:layout_below="@+id/rating_bar"
             android:layout_marginLeft="78dp"
             android:layout_marginTop="20dp"

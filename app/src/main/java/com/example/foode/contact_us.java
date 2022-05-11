@@ -19,7 +19,7 @@ public class contact_us extends AppCompatActivity {
         txtmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(contact_us.this, contact_us.class);
+                Intent intent = new Intent(contact_us.this, contact_mail.class);
                 startActivity(intent);
             }
         });
