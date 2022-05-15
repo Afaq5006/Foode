@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class contact_us extends AppCompatActivity {
-    TextView txtmail, txtnum;
+    TextView txtmail, txtnum, txtyou;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,5 +35,17 @@ public class contact_us extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        txtyou = findViewById(R.id.txt_yout);
+        txtyou.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gourl("https://www.youtube.com/channel/UC6yLzw7kKgdeEKgF9jjJxoA");
+            }
+        });
+    }
+    private void gourl(String s) {
+        Uri uri=Uri.parse(s);
+        startActivity(new Intent(Intent.ACTION_VIEW,uri));
     }
 }
